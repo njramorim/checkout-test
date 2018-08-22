@@ -21,7 +21,7 @@ const CheckoutModal = ({ isLoading, hasAlert }) => (
           status="warning"
           title="compra cancelada"
           image={iconCar}
-          description="o pedido não foi enviado e você não sera cobrado"
+          description="o pedido não foi enviado e você não será cobrado"
         />
       ))}
     {isLoading && <Loader />}
