@@ -41,8 +41,7 @@ npm run server - start the server at htpp://localhost:3000
 * [Axios](https://github.com/axios/axios)
 
 
-## (Would be nice) To do
-
+##### (Would be nice) To do
 - multiple routes
 - error pages
 - error states
