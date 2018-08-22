@@ -1,0 +1,32 @@
+@import './assets/styles/reset',
+  './assets/styles/custom',
+  './assets/styles/fonts',
+  './assets/styles/settings';
+
+.appWrapper {
+  background-color: $color-bg;
+  color: $color-text;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  
+  margin: 0 auto;
+  float: right;
+
+  > * {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in 0.2s;
+  }
+  
+  &Ready {
+     > * {       
+      opacity: 1;
+      pointer-events: initial;
+     }
+  }
+}

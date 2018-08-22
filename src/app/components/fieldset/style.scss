@@ -1,0 +1,13 @@
+@import '../../assets/styles/settings';
+
+.fieldset {
+  $legendMargin: 25px;
+  $fieldsetMargin: 7.5px;
+  
+  margin-bottom: $fieldsetMargin;
+
+  .legend {
+    @extend %text__title;
+    margin-bottom: $legendMargin;
+  }
+}

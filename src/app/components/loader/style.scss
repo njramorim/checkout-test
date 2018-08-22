@@ -1,0 +1,16 @@
+@import '../../assets/styles/settings';
+
+
+.loader {
+  $iconSize: 70px;
+
+  animation: rotate 0.9s cubic-bezier(0.63, 1, 0.51, 0.72) 0s infinite;
+  background-image: url('../../assets/images/loading.svg');
+  background-size: cover;
+  height: $iconSize;
+  margin-left: -($iconSize / 2);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: $iconSize;
+}

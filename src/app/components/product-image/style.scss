@@ -1,0 +1,22 @@
+.productImage {
+  $borderRadius: 3px;
+  $margin: 35px;
+  $photoHeight: 125px;
+
+  flex: 0 1 100%;
+  margin-bottom: $margin;
+  text-align: center;
+
+  .photo {
+    border-radius: $borderRadius;
+    height: $photoHeight;
+  }
+
+  .legend {
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+  }
+} 

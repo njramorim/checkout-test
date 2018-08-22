@@ -1,0 +1,50 @@
+@import '../../assets/styles/settings';
+
+.alert {
+  $borderRadius: 8px;
+  $height: 190px;
+  $width: 300px;
+  $padding: 25px;
+  $imageHeight: 30px;
+  $imageMargin: 15px;
+
+  background-color: getColor('white');
+  border-radius: $borderRadius;
+  box-shadow: 0px 1px 1px 1px rgba(getColor('black'), 0.4);
+  height: auto;
+  left: 50%;
+  margin-top: -$headerHeight;
+  max-height: $height;
+  max-width: 90%;
+  padding: $padding;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%);
+  width: $width;
+  overflow: auto;
+
+  .image {
+    height: $imageHeight;
+    display: block;
+    margin: 0 auto $imageMargin;
+    width: auto;
+  }
+
+  &[data-status=warning] {
+    filter: hue-rotate(-70deg);
+  }
+
+  .title {
+    @extend %text__big;
+    font-weight: 500;
+    color: $color-title;
+
+    margin-bottom: 15px;
+  }
+
+  .description {
+    @extend %text__light;
+    line-height: 1.2rem;
+  }
+}

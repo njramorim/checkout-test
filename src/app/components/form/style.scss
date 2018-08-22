@@ -1,0 +1,11 @@
+@import '../../assets/styles/settings';
+
+.form {  
+  $listItemMargin: 25px;
+
+  flex: 0 1 100%;
+
+  li {
+    margin-bottom: $listItemMargin;
+  }
+}

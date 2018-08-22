@@ -1,0 +1,35 @@
+@import '../../assets/styles/settings';
+
+.priceItem {
+  $marginBottom: 5px;
+
+  display: inline-block;
+  margin-bottom: $marginBottom;
+  text-align: left;
+  width: 100%;
+
+
+  .type {
+    @extend %text;
+    @extend %text__light;
+
+    text-transform: lowercase;
+  }
+
+  .price {
+    @extend %text__description;
+    @extend %text__light;
+
+    text-align: right;
+    float: right;
+  }
+
+  &Discount .price {
+    @extend %text__diff;
+    color: red;
+  }
+
+  &Total .price {
+    @extend %text__strong;
+  }
+}

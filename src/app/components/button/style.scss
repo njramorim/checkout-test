@@ -1,0 +1,62 @@
+@import '../../assets/styles/settings';
+
+.button {
+  $height: 50px;
+  $borderRadius: 4px 4px 6px 6px;
+
+  background-color: getColor('froly');
+  border: 1px solid getColor('swissCoffee');
+  border-bottom: 3px solid getColor('chestnutRose');
+  border-radius: $borderRadius;
+  color: getColor('white');
+  cursor: pointer;
+  height: $height;
+  padding: 0;
+  transition: 0.25s background-color ease-in, 0.25s border-bottom-color ease-in;
+  @extend %text__strong;
+
+  &:hover {
+    background-color: lighten(getColor('froly'), 2.5%)
+  }
+
+  &:active {
+    transform: translateY(2px);
+    border-bottom-width: 1px;
+    border-bottom-color: getColor('froly');
+  }
+
+  
+  &[data-status="cancel"] {
+    color: getColor('froly');
+    background-color: getColor('white');
+    border-bottom: 3px solid getColor('swissCoffee');
+    transition: 0.25s border-color ease-in, 0.25s border-bottom-color ease-in;
+
+    @extend %text__strong;
+
+    &:hover {
+      border-color: darken(getColor('swissCoffee'), 7.55%);
+    }
+  
+    &:active {
+      transform: translateY(2px);
+      border-bottom-width: 1px;
+      border-bottom-color: getColor('swissCoffee');
+    }
+  }
+}
+
+.buttonGroup {
+  border-top: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+
+  > * {
+    width: 48%;
+    
+    &:only-child {
+      width: 100%;
+    }
+  }
+}

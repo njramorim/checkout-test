@@ -1,0 +1,37 @@
+@import './colors';
+
+%text {
+  $fsizeNormal: 1em;
+  $fsizeBig: 1.2em;
+  font-weight: 500;
+
+  color: $color-text;
+  font-size: $fsizeNormal;
+
+  &__big {
+    font-size: $fsizeBig;
+  }
+
+  &__description {
+    color: $color-description;
+  }
+
+  &__diff {
+    color: $color-textDiff;
+  }
+
+  &__title {
+    color: $color-title;
+    font-size: $fsizeBig;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+  }
+
+  &__light {
+    font-weight: 400;
+  }
+
+  &__strong {
+    font-weight: bold;
+  }
+}
