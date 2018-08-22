@@ -38,8 +38,6 @@ const checkout = {
 }
 
 server.get('/api/checkouts/:checkoutId', (req, res) => {
-  console.log('checkout: ', req.params)
-  console.log('checkout: ', req.query)
   checkout.totalPrice = product.price + checkout.shippingPrice
 
   if (parseInt(req.query.couponId, 10) === coupon.id) {
