@@ -1,5 +1,4 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin'
-// import * as path from 'path'
 import CSS from './conf/style'
 import HTML from './conf/markup'
 import JS from './conf/script'
