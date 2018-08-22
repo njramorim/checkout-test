@@ -47,3 +47,4 @@ npm run server - start the server at htpp://localhost:3000
 - error states
 - test / test configs
 - apply stylelint
+- redux
